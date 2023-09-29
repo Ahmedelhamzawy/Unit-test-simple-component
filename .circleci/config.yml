@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   cypress: cypress-io/cypress@13
 workflows:
-    test:
+  test:
     jobs:
       - cypress/run:
            install-browsers: true
