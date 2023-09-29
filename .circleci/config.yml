@@ -1,9 +1,9 @@
 version: 2.1
 orbs:
-  cypress: cypress-io/cypress@13
+  cypress: cypress-io/cypress@13.0.0
 workflows:
   build:
     jobs:
-      - cypress-io/run:
-          start-command: 'npx vite preview'
-          cypress-command: 'npx cypress run'
+      - cypress/run:
+           cypress-command: 'npx cypress run --component'
+
