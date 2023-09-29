@@ -5,5 +5,5 @@ workflows:
   build:
     jobs:
       - cypress/run:
-           cypress-command: 'npx cypress run --component'
+           cypress-command: npx cypress run --component
 
