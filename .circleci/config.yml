@@ -1,9 +1,10 @@
 version: 2.1
 orbs:
-  cypress: cypress-io/cypress@1
+  cypress: cypress-io/cypress@13
 workflows:
-  build:
+  use-my-orb:
     jobs:
       - cypress/run:
+           start-command: npx vite preview
            cypress-command: npx cypress run --component
 
