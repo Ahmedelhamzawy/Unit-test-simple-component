@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  cypress: cypress-io/cypress@13
+  cypress: vite/cypress@13
 workflows:
   test:
     jobs:
