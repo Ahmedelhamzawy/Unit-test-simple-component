@@ -1,11 +1,11 @@
 version: 2.1
 orbs:
-  cypress-io: cypress-io/cypress@13
+  cypress: cypress-io/cypress@13
 workflows:
     test:
     jobs:
-      - cypress-io/run:
-          install-browsers: true
-           start-command: npx vite preview
-           cypress-command: npx cypress run --component --browser chrome
+      - cypress/run:
+           install-browsers: true
+           start-command: 'npx vite preview'
+           cypress-command: 'npx cypress run --component --browser chrome'
 
