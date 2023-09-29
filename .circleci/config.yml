@@ -5,6 +5,7 @@ workflows:
   use-my-orb:
     jobs:
       - cypress/run:
+      
            start-command: npx vite preview
            cypress-command: npx cypress run --component
 
